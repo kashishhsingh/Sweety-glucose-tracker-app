@@ -1,0 +1,283 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff4f7;
+}
+
+/* Login and Signup Container */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Login and Signup Card */
+.auth-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(200, 100, 130, 0.12);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  color: #e75c91;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.subtitle {
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #888888;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+/* Form */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444444;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e5cbd5;
+  border-radius: 9px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  border-color: #e75c91;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e75c91;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d94b81;
+}
+
+/* Messages */
+.message {
+  margin-top: 18px;
+  color: #b23c70;
+}
+
+/* Login and Signup Switch */
+.switch-text {
+  margin-top: 22px;
+  color: #666666;
+}
+
+.switch-text span {
+  color: #e75c91;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Dashboard */
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(200, 100, 130, 0.12);
+  text-align: center;
+}
+
+.dashboard-card p {
+  margin: 18px 0;
+  color: #777777;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .auth-card,
+  .dashboard-card {
+    padding: 25px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+}
+
+/* Sweety Dashboard */
+
+.tracker-dashboard {
+  min-height: 100vh;
+  background-color: #fff4f7;
+}
+
+.dashboard-header {
+  background-color: #ffffff;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-header h1 {
+  color: #e75c91;
+  margin: 0;
+}
+
+.dashboard-header p {
+  color: #888888;
+}
+
+.dashboard-header button {
+  width: auto;
+  padding: 10px 24px;
+}
+
+.dashboard-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+.dashboard-content > h2 {
+  margin-bottom: 10px;
+}
+
+.tracker-card {
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(200, 100, 130, 0.08);
+}
+
+.tracker-card h2 {
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.tracker-card label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: bold;
+}
+
+.tracker-card input,
+.tracker-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5cbd5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #ffffff;
+}
+
+.tracker-card form button {
+  margin-top: 10px;
+}
+
+.reading-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f2e1e7;
+}
+
+.reading-item p,
+.reading-item small {
+  color: #777777;
+  margin-top: 5px;
+}
+
+.delete-button {
+  width: auto;
+  padding: 9px 16px;
+  background: #dc6b79;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.report-box {
+  background: #fff4f7;
+  padding: 20px 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.report-box h3 {
+  color: #e75c91;
+  font-size: 24px;
+}
+
+.report-box p {
+  color: #777777;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .report-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-header {
+    padding: 15px;
+  }
+
+  .tracker-card {
+    padding: 18px;
+  }
+}
